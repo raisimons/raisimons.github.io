@@ -2,14 +2,384 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+  <!--Bootstrap CSS-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+
+  <!--Google Font CSS-->
+  <link href="https://fonts.googleapis.com/css?family=Liu+Jian+Mao+Cao&display=swap" rel="stylesheet">
+
+  <!--Our own CSS-->
+  <link rel="stylesheet" href="style2.css" />
+
+  <title>Rai's Porfolio</title>
 </head>
 
 <body>
-    <h1>Rai Account</h1>
+  <!--Navigation-->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="nav-bar">
+    <div class="navbar-brand" id="brand-container">
+      <a style="color: white; text-decoration:none;" href="#">
+        <p>Rai Simons</p>
+        <p id="brand-work">Web Developer</p>
+      </a>
+    </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto justify-content-end">
+        <li class="nav-item">
+          <a class="nav-link" href="#">About </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#testimonials">Testimonials</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#projects">Projects</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!--About-->
+  <section id="about">
+    <p class="about-name">Hi,</p>
+    <p class="about-name">I am Rai</p>
+    <p id="about-tagline">
+      From the football field, to the field of Web development
+    </p>
+    <div id="about-social-media">
+      <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/raisimons/">
+        <img class="social-media-icon" src="./resources/instagram-logo.png" alt="instagram logo" />
+      </a>
+      <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com">
+        <img class="social-media-icon" src="./resources/linkedin-logo.png" alt="linkedin logo" srcset="" />
+      </a>
+    </div>
+
+    <button class="btn btn-primary learn_call_to_action">
+      <a style="color: white; text-decoration: none;" href="#contact">I am entering the world of coding & I can't be any
+        more excited! </a>
+    </button>
+
+  </section>
+
+  <!--Reviews-->
+  <section id="testimonials">
+    <h2 class="section-header">Testimonials</h2>
+    <div class="section-carousel">
+      <div id="testimonials-container">
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <div class="reviewer">
+              <img class="reviewer-img-thumbnail" src=https://randomuser.me/api/portraits/women/61.jpg
+                alt="Morgan profile picture">
+              <h5 class="card-title">
+                <a>Morgan
+                  Crosta</a>
+              </h5>
+
+              <h6 class="card-subtitle mb-2 text-muted">
+                Fullstack Developer
+              </h6>
+            </div>
+            <p class="card-text review-quote">
+              "I would also like to say thank you to all your staff. "
+              - Morgan C.
+            </p>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <div class="reviewer">
+              <img class="reviewer-img-thumbnail" src=https://randomuser.me/api/portraits/men/91.jpg
+                alt="Odelle profile picture">
+              <h5 class="card-title">
+                <a>Odelle
+                  Aijaz</a>
+              </h5>
+
+              <h6 class="card-subtitle mb-2 text-muted">
+                App Engineering Specialist
+              </h6>
+            </div>
+            <p class="card-text review-quote">
+
+              "I didn't even need training. It's the perfect solution for our business. Best. Product. Ever! I STRONGLY
+              recommend Rai's web development to EVERYONE interested in running a successful online business!"
+              - Odelle A.
+            </p>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <div class="reviewer">
+              <img class="reviewer-img-thumbnail" src=https://randomuser.me/api/portraits/men/30.jpg
+                alt="Shannon profile picture">
+              <h5 class="card-title">
+                <a>Shannon
+                  Edgar</a>
+              </h5>
+
+              <h6 class="card-subtitle mb-2 text-muted">
+                Web Developer
+              </h6>
+            </div>
+            <p class="card-text review-quote">
+              "Absolutely wonderful! Rai's web development is the most valuable business resource we have EVER
+              purchased."
+              - Shannon E.
+            </p>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <div class="reviewer">
+              <img class="reviewer-img-thumbnail" src=https://randomuser.me/api/portraits/women/8.jpg
+                alt="Bunny profile picture">
+              <h5 class="card-title">
+                <a>Bunny
+                  Jung</a>
+              </h5>
+
+              <h6 class="card-subtitle mb-2 text-muted">
+                Web Developer
+              </h6>
+            </div>
+            <p class="card-text review-quote">
+              "Rai's web development saved my business. We can't understand how we've been living without Rai's web
+              development ."
+              - Bunny J.
+            </p>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <div class="reviewer">
+              <img class="reviewer-img-thumbnail" src=https://randomuser.me/api/portraits/women/8.jpg
+                alt="Denice profile picture">
+              <h5 class="card-title">
+                <a>Denice
+                  Darville</a>
+              </h5>
+
+              <h6 class="card-subtitle mb-2 text-muted">
+                Software Engineer
+              </h6>
+            </div>
+            <p class="card-text review-quote">
+              "Man, this thing is getting better and better as I learn more about it. Rai's web development saved my
+              business. Thanks Rai's web development ! Thanks to Rai's web development , we've just launched our 5th
+              website!"
+              - Denice D.
+            </p>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <div class="reviewer">
+              <img class="reviewer-img-thumbnail" src=https://randomuser.me/api/portraits/men/77.jpg
+                alt="Hakim profile picture">
+              <h5 class="card-title">
+                <a>Hakim
+                  Parekh</a>
+              </h5>
+
+              <h6 class="card-subtitle mb-2 text-muted">
+                Lead Software Engineer
+              </h6>
+            </div>
+            <p class="card-text review-quote">
+              "I am so pleased with this product. If you aren't sure, always go for Rai's web development . I wish I
+              would have thought of it first. Thanks to Rai's web development , we've just launched our 5th website!"
+              - Hakim P.
+            </p>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <div class="reviewer">
+              <img class="reviewer-img-thumbnail" src=https://randomuser.me/api/portraits/women/58.jpg
+                alt="Liliane profile picture">
+              <h5 class="card-title">
+                <a>
+                  Liliane Ingham</a>
+              </h5>
+
+              <h6 class="card-subtitle mb-2 text-muted">
+                Software Engineer
+              </h6>
+            </div>
+            <p class="card-text review-quote">
+              "Thank you so much for your help. We've used Rai's web development for the last five years. I will refer
+              everyone I know. Without Rai's web development , we would have gone bankrupt by now."
+              - Liliane I.
+            </p>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <div class="reviewer">
+              <img class="reviewer-img-thumbnail" src=https://randomuser.me/api/portraits/women/63.jpg
+                alt="Jilli profile picture">
+              <h5 class="card-title">
+                <a>Jilli Galyliak</a>
+              </h5>
+
+              <h6 class="card-subtitle mb-2 text-muted">
+                Fullstack Web Developer
+              </h6>
+            </div>
+            <p class="card-text review-quote">
+              "It's all good. I will let my mum know about this, she could really make use of Rai's web development !
+              The best on the net! I am really satisfied with my Rai's web development ."
+              - Jilli G.
+            </p>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <div class="reviewer">
+              <img class="reviewer-img-thumbnail" src=https://randomuser.me/api/portraits/men/2.jpg
+                alt="Nico profile picture">
+              <h5 class="card-title">
+                <a>Nico Davies</a>
+              </h5>
+
+              <h6 class="card-subtitle mb-2 text-muted">
+                AWS Solutions Architectt
+              </h6>
+            </div>
+            <p class="card-text review-quote">
+              "You won't regret it. Dude, your stuff is the bomb! Rai's web development was worth a fortune to my
+              company."
+              - Nico D.
+            </p>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <div class="reviewer">
+              <img class="reviewer-img-thumbnail" src=https://randomuser.me/api/portraits/women/89.jpg
+                alt="Ulla profile picture">
+              <h5 class="card-title">
+                <a>Ulla
+                  Dally</a>
+              </h5>
+
+              <h6 class="card-subtitle mb-2 text-muted">
+                Fullstack Engineer
+              </h6>
+            </div>
+            <p class="card-text review-quote">
+              "Rai's web development has got everything I need. Great job, I will definitely be ordering again! Thanks
+              Rai's web development !"
+              - Ulla D.
+            </p>
+          </div>
+        </div>
+
+
+  </section>
+
+  <!--Contact-->
+  <section id="contact">
+    <h2 class="section-header">User Feedback</h2>
+    <div id="contact-container">
+      <iframe id="google-doc"
+        src="https://docs.google.com/forms/d/e/1FAIpQLSdc-jfKzbKrCiqcI9_aSoUWwfCyPv7GLalxOHBVdEKm6rG1ag/viewform?embedded=true"
+        width="640" height="1407" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>"
+
+    </div>
+  </section>
+
+  <!--Projects-->
+  <section id="projects">
+    <h2 class="section-header">The Journey</h2>
+    <div class="section-carousel">
+      <div id="projects-container">
+
+        <div class="card" style="width: 18rem;">
+          <img
+            src="https://cdn5.vectorstock.com/i/1000x1000/96/14/coming-soon-dark-realistic-poster-promotion-flyer-vector-16489614.jpg"
+            class="card-img-top" alt="coming soon" />
+          <div class="card-body">
+            <h5 class="card-title project-title">Coming Soon</h5>
+            <p class="card-text project-description">
+              Projects will be displayed here.
+            </p>
+            <div class="project-call-to-action">
+
+            </div>
+
+          </div>
+        </div>
+        <div class="card project-card" style="width: 18rem;">
+          <img
+            src="https://cdn5.vectorstock.com/i/1000x1000/96/14/coming-soon-dark-realistic-poster-promotion-flyer-vector-16489614.jpg"
+            class="card-img-top" alt="Amaturufu iOS app image" />
+          <div class="card-body">
+            <h5 class="card-title project-title">Coming soon</h5>
+            <p class="card-text project-description">
+              Projects will be displayed here.
+            </p>
+            <div class="project-call-to-action">
+
+            </div>
+
+          </div>
+        </div>
+        <div class="card project-card" style="width: 18rem;">
+          <img
+            src="https://cdn5.vectorstock.com/i/1000x1000/96/14/coming-soon-dark-realistic-poster-promotion-flyer-vector-16489614.jpg"
+            class="card-img-top" alt="Amaturufu iOS app image" />
+          <div class="card-body">
+            <h5 class="card-title project-title">Coming soon</h5>
+            <p class="card-text project-description">
+              Projects will be displayed here.
+            </p>
+            <div class="project-call-to-action">
+            </div>
+          </div>
+        </div>
+        <div class="card project-card" style="width: 18rem;">
+          <img
+            src="https://cdn5.vectorstock.com/i/1000x1000/96/14/coming-soon-dark-realistic-poster-promotion-flyer-vector-16489614.jpg"
+            class="card-img-top" alt="Amaturufu iOS app image" />
+          <div class="card-body">
+            <h5 class="card-title project-title">Coming soon</h5>
+            <p class="card-text project-description">
+              Projects will be displayed here.
+            </p>
+            <div class="project-call-to-action">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bootstrap JS-->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
 </body>
 
 </html>
